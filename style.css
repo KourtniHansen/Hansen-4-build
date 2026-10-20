@@ -5,39 +5,88 @@
 }
 
 body {
-    font-family: sans-serif;
-    line-height: 1.5;
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #eef3ed;
     color: #333;
 }
 
- header {
-    background-color: #2e7d32;
-    color: white;
+ main {
+    display:grid;
+    grid-template-columns: 1fr;
     padding: 1rem;
  }
 
+ header {
+    background-color: #2c5e3b;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+ }
+
+ header h1 {
+    margin-bottom: 10px;
+ }
+
+ .card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
  nav ul {
     list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+    
  }
 
  nav a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
  }
 
- main{
-    padding: 1rem;
+ nav a:hover {
+    text-decoration: underline;
+    font-style: italic;
+    color: rgb(255, 56, 115);
  }
+
+ section h2 {
+    color: #2c5e3b;
+    margin-bottom: 10px;
+ }
+
+ section p, section ul {
+    margin-bottom: 15px;
+}
+
+section ul {
+    padding-left: 20px;
+}
 
  img {
     max-width: 100%;
     height: auto;
+    border-radius: 4px;
+    margin-top: 10px;
  }
 
  footer {
-    background-color: #333;
+    background-color: #1e3f26;
     color: white;
     text-align: center;
     padding: 1rem;
+    margin-top: 20px;
+    font-size: 0.9rem;
  }
