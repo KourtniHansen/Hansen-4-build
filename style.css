@@ -26,6 +26,7 @@ body {
 
  header h1 {
     margin-bottom: 10px;
+    font-size: 35px;
  }
 
  .card-container {
@@ -90,3 +91,22 @@ section ul {
     margin-top: 20px;
     font-size: 0.9rem;
  }
+
+@media (min-width: 650px) {
+    main {
+        padding: 3rem;
+        max-width: 75rem;
+        margin: 0 auto;
+    }
+
+    .card-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .card {
+        flex: 1;
+        min-width: 22rem;
+    }
+}
